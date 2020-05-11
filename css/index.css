@@ -162,12 +162,33 @@ header img {
 }
 header h1 {
   font-size: 40px;
+  color: steelblue;
 }
 header h3 {
   font-size: 20px;
   padding: 10px;
+  color: steelblue;
 }
 header p {
   font-size: 14px;
   padding: 20px;
+  color: steelblue;
+}
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  background-image: image();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+.container h2 {
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  color: steelblue;
 }
