@@ -1,1 +1,282 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqaqE.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+}
+.border {
+  border: 2px solid steelblue;
+}
+.font {
+  font-family: 'raleway', sans-serif;
+}
+html {
+  max-width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+header nav {
+  font-family: 'raleway', sans-serif;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+}
+header nav :hover {
+  color: #ffd0bd;
+}
+header nav a {
+  padding: 5rem;
+  color: steelblue;
+}
+header img {
+  width: 500px;
+  height: 400px;
+  margin: 40px auto;
+}
+header h1 {
+  font-family: 'raleway', sans-serif;
+  text-decoration: underline;
+  font-size: 5rem;
+  color: #ffd0bd;
+}
+header h3 {
+  font-family: 'raleway', sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+  color: steelblue;
+}
+header p {
+  font-family: 'raleway', sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem;
+  color: steelblue;
+}
+.container {
+  font-family: 'raleway', sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  background-color: mistyrose;
+  border: 2px solid steelblue;
+}
+.container h2 {
+  text-decoration: underline;
+  font-size: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: steelblue;
+}
+.container ol {
+  color: #07345f;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 1.6rem;
+}
+.closer {
+  font-family: 'raleway', sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: mistyrose;
+  border: 2px solid steelblue;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: steelblue;
+  text-decoration: underline;
+}
+p {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem;
+  line-height: 1.5;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: url(https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+footer button {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  background-color: mistyrose;
+  border: 2px solid steelblue;
+  box-shadow: #07345f;
+}
+footer button a:hover {
+  color: darksalmon;
+}
+footer button a {
+  color: steelblue;
+}
+footer a {
+  font-family: 'raleway', sans-serif;
+  color: #ffd0bd;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  footer a {
+    font-size: 2rem;
+  }
+}
+footer a:hover {
+  color: steelblue;
+}
