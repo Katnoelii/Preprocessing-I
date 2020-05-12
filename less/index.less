@@ -3,14 +3,15 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -32,9 +33,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+// ol, ul {
+// 	list-style: none;
+// }
 blockquote, q {
 	quotes: none;
 }
@@ -56,11 +57,11 @@ table {
 html, body {
     height: 100%;
 }
-
+@text:#07345f;
 @blue:steelblue;
-@backgroundcolor:dimgray;
+@backgroundcolor:lavenderblush;
 .border(){
-	border:2px solid white;
+	border:2px solid steelblue;
 }
 html{
 	max-width:100%;
@@ -76,6 +77,7 @@ header{
 	background-position:center;
 	background-attachment: scroll;
 	nav{
+		font-family: 'Raleway', sans-serif;
 		margin-top: 20px;
 		font-size:20px;
 		a {
@@ -89,35 +91,79 @@ header{
 		margin:40px auto;
 	}//This marks the end of img
 	h1{
-		font-size:40px;
-		color:@blue
+		font-family: 'Raleway', sans-serif;
+		text-decoration: underline;
+		font-size:50px;
+		color:pink;
 	}//This marks the end of h1
 	h3{
+		font-family: 'Raleway', sans-serif;
 		font-size:20px;
-		padding:10px;
+		padding:20px;
 		color:@blue;
 	}//This marks the end of h3
 	p{
+		font-family: 'Raleway', sans-serif;
 		font-size: 14px;
 		padding:20px;
 		color:@blue;
 	}//This marks the end of P
 }//This marks the end of Header
 .container{
+	font-family: 'Raleway', sans-serif;
 	margin:auto;
 	display:flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction:row;
+	justify-content:center;
 	padding:10px;
-	background-image: image();
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-position:center;
-	background-attachment: scroll;
+	background-color: @backgroundcolor;
+	.border();
 	h2{
+		text-decoration: underline;
 		font-size:25px;
 		padding:10px;
 		text-align: center;
 		color:@blue;
 	}//this marks the end of h2
+	ol{
+		color:@text;
+		line-height:1.5;
+		text-align:left;
+	}//This marks the end of the ol
 }//This marks the end of container
+.closer{
+	font-family:'raleway',sans-serif;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-color: @backgroundcolor;
+	.border();
+}//This marks the end of closer
+h2{
+	text-align: center;
+	font-size: 25px;
+	padding:10px;
+	color: @blue;
+	text-decoration:underline;
+}//This marks the end of h2
+p{
+	text-align: center;
+	padding:20px;
+	line-height: 1.5;
+}//This marks the end of p
+footer{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding:20px;
+	background-color: @backgroundcolor;
+	button{
+		margin:10px;
+		background-color: @backgroundcolor;
+		.border();
+		box-shadow: @text;
+		a{
+			color: @blue;
+		}//This marks the end of the mail link
+	}//This marks the end of button
+}//This marks the end of footer
