@@ -57,11 +57,18 @@ html, body {
 	font-size:62.5%;
     height: 100%;
 }
+
 @text:#07345f;
+
 @blue:steelblue;
+
 @backgroundcolor:mistyrose;
+
 .border(){
 	border:2px solid steelblue;
+}//This marks the end of mixin1
+.font(){
+	font-family:'raleway',sans-serif;
 }
 html{
 	max-width:100%;
@@ -76,7 +83,7 @@ header{
 	background-position:center;
 	background-attachment: scroll;
 	nav{
-		font-family: 'Raleway', sans-serif;
+		.font();
 		margin-top: 20px;
 		font-size:2rem;
 		@media(max-width:500px){
@@ -100,26 +107,26 @@ header{
 		margin:40px auto;
 	}//This marks the end of img
 	h1{
-		font-family: 'Raleway', sans-serif;
+		.font();
 		text-decoration: underline;
 		font-size:5rem;
 		color:rgb(255, 208, 189);
 	}//This marks the end of h1
 	h3{
-		font-family: 'Raleway', sans-serif;
+		.font();
 		font-size:2rem;
 		padding:2rem;
 		color:@blue;
 	}//This marks the end of h3
 	p{
-		font-family: 'Raleway', sans-serif;
+		.font();
 		font-size:1.4rem;
 		padding:2rem;
 		color:@blue;
 	}//This marks the end of P
 }//This marks the end of Header
 .container{
-	font-family: 'Raleway', sans-serif;
+	.font();
 	margin:auto;
 	display:flex;
 	flex-direction:row;
@@ -142,7 +149,7 @@ header{
 	}//This marks the end of the ol
 }//This marks the end of container
 .closer{
-	font-family:'raleway',sans-serif;
+	.font();
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -186,7 +193,7 @@ footer{
 		}//This marks the end of the mail link
 	}//This marks the end of button
 	a{
-		font-family:'raleway',sans-serif;
+		.font();
 		color:rgb(255, 208, 189);
 		padding:1rem;
 		font-size:1.6rem;

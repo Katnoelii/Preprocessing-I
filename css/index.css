@@ -149,7 +149,7 @@ header {
   background-attachment: scroll;
 }
 header nav {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   margin-top: 20px;
   font-size: 2rem;
 }
@@ -175,25 +175,25 @@ header img {
   margin: 40px auto;
 }
 header h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   text-decoration: underline;
   font-size: 5rem;
   color: #ffd0bd;
 }
 header h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-size: 2rem;
   padding: 2rem;
   color: steelblue;
 }
 header p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-size: 1.4rem;
   padding: 2rem;
   color: steelblue;
 }
 .container {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   margin: auto;
   display: flex;
   flex-direction: row;
