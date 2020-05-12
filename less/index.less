@@ -54,6 +54,7 @@ table {
 }
 
 html, body {
+	font-size:62.5%;
     height: 100%;
 }
 @text:#07345f;
@@ -66,7 +67,6 @@ html{
 	max-width:100%;
 }//This marks the end of the reset
 header{
-
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -78,9 +78,19 @@ header{
 	nav{
 		font-family: 'Raleway', sans-serif;
 		margin-top: 20px;
-		font-size:20px;
+		font-size:2rem;
+		@media(max-width:500px){
+			display:flex;
+			flex-direction:column;
+			text-align: center;
+			font-size: 3rem;
+			margin-top:0;
+		}
+		:hover{
+			color:rgb(255, 208, 189);
+		}//This marks the end :hover
 		a {
-			padding:50px;
+			padding:5rem;
 			color:@blue;
 		} //This marks the end of a links
 	}//This marks the end of nav
@@ -92,19 +102,19 @@ header{
 	h1{
 		font-family: 'Raleway', sans-serif;
 		text-decoration: underline;
-		font-size:50px;
+		font-size:5rem;
 		color:rgb(255, 208, 189);
 	}//This marks the end of h1
 	h3{
 		font-family: 'Raleway', sans-serif;
-		font-size:20px;
-		padding:20px;
+		font-size:2rem;
+		padding:2rem;
 		color:@blue;
 	}//This marks the end of h3
 	p{
 		font-family: 'Raleway', sans-serif;
-		font-size: 14px;
-		padding:20px;
+		font-size:1.4rem;
+		padding:2rem;
 		color:@blue;
 	}//This marks the end of P
 }//This marks the end of Header
@@ -114,13 +124,13 @@ header{
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
-	padding:10px;
+	padding:1rem;
 	background-color: @backgroundcolor;
 	.border();
 	h2{
 		text-decoration: underline;
-		font-size:25px;
-		padding:10px;
+		font-size:2.5rem;
+		padding:1rem;
 		text-align: center;
 		color:@blue;
 	}//this marks the end of h2
@@ -128,6 +138,7 @@ header{
 		color:@text;
 		line-height:1.5;
 		text-align:left;
+		font-size:1.6rem;
 	}//This marks the end of the ol
 }//This marks the end of container
 .closer{
@@ -140,38 +151,50 @@ header{
 }//This marks the end of closer
 h2{
 	text-align: center;
-	font-size: 25px;
-	padding:10px;
+	font-size:2.5rem;
+	padding:1rem;
 	color: @blue;
 	text-decoration:underline;
 }//This marks the end of h2
 p{
 	text-align: center;
-	padding:20px;
+	font-size:1.6rem;
+	padding:2rem;
 	line-height: 1.5;
 }//This marks the end of p
 footer{
 	display:flex;
 	flex-direction:column;
 	align-items: center;
-	padding:20px;
+	padding:2rem;
 	background: url(https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position:center;
 	background-attachment:fixed;
 	button{
-		margin-bottom: 25px;
+		font-size:1.8rem;
+		margin-bottom:25px;
 		background-color: @backgroundcolor;
 		.border();
 		box-shadow: @text;
+		a:hover{
+			color:darksalmon;
+		}//This marks the end of a:hover
 		a{
 			color: @blue;
 		}//This marks the end of the mail link
 	}//This marks the end of button
 	a{
 		font-family:'raleway',sans-serif;
-		color:darksalmon;
-		padding:10px;
-	}
+		color:rgb(255, 208, 189);
+		padding:1rem;
+		font-size:1.6rem;
+		@media(max-width:500px){
+			font-size: 2rem;
+		}
+	}//This marks the end of social links
+	a:hover{
+		color:@blue;
+	}//This marks the end of the hover
 }//This marks the end of footer
