@@ -59,7 +59,7 @@ html, body {
 }
 @text:#07345f;
 @blue:steelblue;
-@backgroundcolor:lavenderblush;
+@backgroundcolor:mistyrose;
 .border(){
 	border:2px solid steelblue;
 }
@@ -94,7 +94,7 @@ header{
 		font-family: 'Raleway', sans-serif;
 		text-decoration: underline;
 		font-size:50px;
-		color:pink;
+		color:darksalmon;
 	}//This marks the end of h1
 	h3{
 		font-family: 'Raleway', sans-serif;
@@ -156,9 +156,13 @@ footer{
 	flex-direction:column;
 	align-items: center;
 	padding:20px;
-	background-color: @backgroundcolor;
+	background: url(https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
 	button{
-		margin:10px;
+		margin-bottom: 25px;
 		background-color: @backgroundcolor;
 		.border();
 		box-shadow: @text;
@@ -166,4 +170,9 @@ footer{
 			color: @blue;
 		}//This marks the end of the mail link
 	}//This marks the end of button
+	a{
+		font-family:'raleway',sans-serif;
+		color:darksalmon;
+		padding:10px;
+	}
 }//This marks the end of footer

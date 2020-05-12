@@ -179,7 +179,7 @@ header h1 {
   font-family: 'Raleway', sans-serif;
   text-decoration: underline;
   font-size: 50px;
-  color: pink;
+  color: darksalmon;
 }
 header h3 {
   font-family: 'Raleway', sans-serif;
@@ -200,7 +200,7 @@ header p {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-  background-color: lavenderblush;
+  background-color: mistyrose;
   border: 2px solid steelblue;
 }
 .container h2 {
@@ -220,7 +220,7 @@ header p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: lavenderblush;
+  background-color: mistyrose;
   border: 2px solid steelblue;
 }
 h2 {
@@ -240,14 +240,23 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: lavenderblush;
+  background: url(https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 footer button {
-  margin: 10px;
-  background-color: lavenderblush;
+  margin-bottom: 25px;
+  background-color: mistyrose;
   border: 2px solid steelblue;
   box-shadow: #07345f;
 }
 footer button a {
   color: steelblue;
+}
+footer a {
+  font-family: 'raleway', sans-serif;
+  color: darksalmon;
+  padding: 10px;
 }
